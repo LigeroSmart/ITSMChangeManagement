@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -1305,190 +1305,190 @@ sub _AddNotifications {
     # Change info for agents (en)
     my $ChangeInfoAgentEn = "\n"
         . "\n"
-        . "Change title: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Change builder: <OTRS_CHANGE_ChangeBuilder>\n"
-        . "Change manager: <OTRS_CHANGE_ChangeManager>\n"
-        . "Current change state: <OTRS_CHANGE_ChangeState>\n"
+        . "Change title: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Change builder: <LIGERO_CHANGE_ChangeBuilder>\n"
+        . "Change manager: <LIGERO_CHANGE_ChangeManager>\n"
+        . "Current change state: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Change info for customers (en)
     my $ChangeInfoCustomerEn = "\n"
         . "\n"
-        . "Change title: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Current change state: <OTRS_CHANGE_ChangeState>\n"
+        . "Change title: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Current change state: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Change info for agents (de)
     my $ChangeInfoAgentDe = "\n"
         . "\n"
-        . "Change Titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Change-Builder: <OTRS_CHANGE_ChangeBuilder>\n"
-        . "Change-Manager: <OTRS_CHANGE_ChangeManager>\n"
-        . "Aktueller Change Status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change Titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Change-Builder: <LIGERO_CHANGE_ChangeBuilder>\n"
+        . "Change-Manager: <LIGERO_CHANGE_ChangeManager>\n"
+        . "Aktueller Change Status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Change info for customers (de)
     my $ChangeInfoCustomerDe = "\n"
         . "\n"
-        . "Change Titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Aktueller Change Status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change Titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Aktueller Change Status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Change info for agents (hu)
     my $ChangeInfoAgentHu = "\n"
         . "\n"
-        . "Változáscím: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Változás-összeállító: <OTRS_CHANGE_ChangeBuilder>\n"
-        . "Változásmenedzser: <OTRS_CHANGE_ChangeManager>\n"
-        . "Jelenlegi változásállapot: <OTRS_CHANGE_ChangeState>\n"
+        . "Változáscím: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Változás-összeállító: <LIGERO_CHANGE_ChangeBuilder>\n"
+        . "Változásmenedzser: <LIGERO_CHANGE_ChangeManager>\n"
+        . "Jelenlegi változásállapot: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Change info for customers (hu)
     my $ChangeInfoCustomerHu = "\n"
         . "\n"
-        . "Változáscím: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Jelenlegi változásállapot: <OTRS_CHANGE_ChangeState>\n"
+        . "Változáscím: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Jelenlegi változásállapot: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Change info for agents (nl)
     my $ChangeInfoAgentNl = "\n"
         . "\n"
-        . "Change-titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Change-Builder: <OTRS_CHANGE_ChangeBuilder>\n"
-        . "Change-Manager: <OTRS_CHANGE_ChangeManager>\n"
-        . "Actuele change-status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change-titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Change-Builder: <LIGERO_CHANGE_ChangeBuilder>\n"
+        . "Change-Manager: <LIGERO_CHANGE_ChangeManager>\n"
+        . "Actuele change-status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Change info for customers (nl)
     my $ChangeInfoCustomerNl = "\n"
         . "\n"
-        . "Change-titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Actuele change-status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change-titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Actuele change-status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for customers (en)
     my $WorkOrderInfoCustomerEn = "\n"
         . "\n"
-        . "Change title: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Current change state: <OTRS_CHANGE_ChangeState>\n"
+        . "Change title: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Current change state: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Workorder title: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Workorder type: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Workorder agent: <OTRS_WORKORDER_WorkOrderAgent>\n"
-        . "Current workorder state: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Workorder title: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Workorder type: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Workorder agent: <LIGERO_WORKORDER_WorkOrderAgent>\n"
+        . "Current workorder state: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for agents (en)
     my $WorkOrderInfoAgentEn = "\n"
         . "\n"
-        . "Change title: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Current change state: <OTRS_CHANGE_ChangeState>\n"
+        . "Change title: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Current change state: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Workorder title: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Workorder type: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Current workorder state: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Workorder title: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Workorder type: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Current workorder state: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<OTRS_WORKORDER_WorkOrderID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<LIGERO_WORKORDER_WorkOrderID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for agents (de)
     my $WorkOrderInfoAgentDe = "\n"
         . "\n"
-        . "Change Titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Aktueller Change Status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change Titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Aktueller Change Status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Workorder Titel: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Workorder Typ: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Workorder Agent: <OTRS_WORKORDER_WorkOrderAgent>\n"
-        . "Aktueller Workorder Status: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Workorder Titel: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Workorder Typ: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Workorder Agent: <LIGERO_WORKORDER_WorkOrderAgent>\n"
+        . "Aktueller Workorder Status: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<OTRS_WORKORDER_WorkOrderID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<LIGERO_WORKORDER_WorkOrderID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for customers (de)
     my $WorkOrderInfoCustomerDe = "\n"
         . "\n"
-        . "Change Titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Aktueller Change Status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change Titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Aktueller Change Status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Workorder Titel: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Workorder Typ: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Aktueller Workorder Status: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Workorder Titel: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Workorder Typ: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Aktueller Workorder Status: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for customers (hu)
     my $WorkOrderInfoCustomerHu = "\n"
         . "\n"
-        . "Változáscím: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Jelenlegi változásállapot: <OTRS_CHANGE_ChangeState>\n"
+        . "Változáscím: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Jelenlegi változásállapot: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Munkamegrendelés-cím: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Munkamegrendelés-típus: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Munkamegrendelés-ügyintéző: <OTRS_WORKORDER_WorkOrderAgent>\n"
-        . "Jelenlegi munkamegrendelés-állapot: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Munkamegrendelés-cím: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Munkamegrendelés-típus: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Munkamegrendelés-ügyintéző: <LIGERO_WORKORDER_WorkOrderAgent>\n"
+        . "Jelenlegi munkamegrendelés-állapot: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for agents (hu)
     my $WorkOrderInfoAgentHu = "\n"
         . "\n"
-        . "Változáscím: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Jelenlegi változásállapot: <OTRS_CHANGE_ChangeState>\n"
+        . "Változáscím: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Jelenlegi változásállapot: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Munkamegrendelés-cím: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Munkamegrendelés-típus: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Jelenlegi munkamegrendelés-állapot: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Munkamegrendelés-cím: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Munkamegrendelés-típus: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Jelenlegi munkamegrendelés-állapot: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<OTRS_WORKORDER_WorkOrderID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<LIGERO_WORKORDER_WorkOrderID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for agents (nl)
     my $WorkOrderInfoAgentNl = "\n"
         . "\n"
-        . "Change-titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Actuele change-status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change-titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Actuele change-status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Work Order-titel: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Work Order-type: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Work Order-agent: <OTRS_WORKORDER_WorkOrderAgent>\n"
-        . "Actuele Work Order-status: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Work Order-titel: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Work Order-type: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Work Order-agent: <LIGERO_WORKORDER_WorkOrderAgent>\n"
+        . "Actuele Work Order-status: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<OTRS_WORKORDER_WorkOrderID>\n"
+        . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMWorkOrderZoom;WorkOrderID=<LIGERO_WORKORDER_WorkOrderID>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # Workorder info for customers (nl)
     my $WorkOrderInfoCustomerNl = "\n"
         . "\n"
-        . "Change-titel: <OTRS_CHANGE_ChangeTitle>\n"
-        . "Actuele change-status: <OTRS_CHANGE_ChangeState>\n"
+        . "Change-titel: <LIGERO_CHANGE_ChangeTitle>\n"
+        . "Actuele change-status: <LIGERO_CHANGE_ChangeState>\n"
         . "\n"
-        . "Work Order-titel: <OTRS_WORKORDER_WorkOrderTitle>\n"
-        . "Work Order-type: <OTRS_WORKORDER_WorkOrderType>\n"
-        . "Actuele Work Order-status: <OTRS_WORKORDER_WorkOrderState>\n"
+        . "Work Order-titel: <LIGERO_WORKORDER_WorkOrderTitle>\n"
+        . "Work Order-type: <LIGERO_WORKORDER_WorkOrderType>\n"
+        . "Actuele Work Order-status: <LIGERO_WORKORDER_WorkOrderState>\n"
         . "\n"
-        . "-- <OTRS_CONFIG_NotificationSenderName>\n";
+        . "-- <LIGERO_CONFIG_NotificationSenderName>\n";
 
     # define notifications and recipients
     my @Notifications = (
@@ -1502,54 +1502,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] neu erstellt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde neu erstellt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] neu erstellt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde neu erstellt.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] created',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was created.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] created',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was created.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] létrehozva',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] létrehozva',
                         Body =>
-                            'Létrejött a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Létrejött a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aangemaakt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is aangemaakt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aangemaakt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is aangemaakt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] neu erstellt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde neu erstellt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] neu erstellt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde neu erstellt.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] created',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was created.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] created',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was created.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] létrehozva',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] létrehozva',
                         Body =>
-                            'Létrejött a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Létrejött a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aangemaakt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is aangemaakt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aangemaakt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is aangemaakt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -1567,54 +1567,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -1632,54 +1632,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -1697,54 +1697,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -1764,54 +1764,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -1832,54 +1832,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -1897,54 +1897,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -1964,54 +1964,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2031,54 +2031,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2096,54 +2096,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2163,54 +2163,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2230,54 +2230,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aktualisiert',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde aktualisiert.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aktualisiert',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde aktualisiert.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] updated',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was updated.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] updated',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was updated.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] frissítve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] frissítve',
                         Body =>
-                            'Frissült a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Frissült a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] bijgewerkt',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is bijgewerkt.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] bijgewerkt',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is bijgewerkt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2298,33 +2298,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] neu erstellt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] neu erstellt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde neu erstellt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde neu erstellt.'
                             . $WorkOrderInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] created',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] created',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was created.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was created.'
                             . $WorkOrderInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] létrehozva',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] létrehozva',
                         Body =>
-                            'Létrejött a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Létrejött a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] aangemaakt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] aangemaakt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is aangemaakt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is aangemaakt.'
                             . $WorkOrderInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -2332,33 +2332,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] neu erstellt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] neu erstellt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde neu erstellt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde neu erstellt.'
                             . $WorkOrderInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] created',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] created',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was created.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was created.'
                             . $WorkOrderInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] létrehozva',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] létrehozva',
                         Body =>
-                            'Létrejött a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Létrejött a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] aangemaakt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] aangemaakt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is aangemaakt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is aangemaakt.'
                             . $WorkOrderInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2379,33 +2379,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] aktualisiert',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] aktualisiert',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
                             . $WorkOrderInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] updated',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] updated',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was updated.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was updated.'
                             . $WorkOrderInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] frissítve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] frissítve',
                         Body =>
-                            'Frissült a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Frissült a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] bijgewerkt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] bijgewerkt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is bijgewerkt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is bijgewerkt.'
                             . $WorkOrderInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -2413,33 +2413,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] aktualisiert',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] aktualisiert',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
                             . $WorkOrderInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] updated',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] updated',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was updated.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was updated.'
                             . $WorkOrderInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] frissítve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] frissítve',
                         Body =>
-                            'Frissült a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Frissült a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] bijgewerkt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] bijgewerkt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is bijgewerkt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is bijgewerkt.'
                             . $WorkOrderInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2460,33 +2460,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] aktualisiert',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] aktualisiert',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
                             . $WorkOrderInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] updated',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] updated',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was updated.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was updated.'
                             . $WorkOrderInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] frissítve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] frissítve',
                         Body =>
-                            'Frissült a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Frissült a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] bijgewerkt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] bijgewerkt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is bijgewerkt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is bijgewerkt.'
                             . $WorkOrderInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -2494,33 +2494,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] aktualisiert',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] aktualisiert',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde aktualisiert.'
                             . $WorkOrderInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] updated',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] updated',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was updated.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was updated.'
                             . $WorkOrderInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] frissítve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] frissítve',
                         Body =>
-                            'Frissült a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Frissült a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] bijgewerkt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] bijgewerkt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is bijgewerkt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is bijgewerkt.'
                             . $WorkOrderInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2541,33 +2541,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> verknüpft',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> verknüpft',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde mit einem <OTRS_LINK_Object> verknüpft.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde mit einem <LIGERO_LINK_Object> verknüpft.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> linked',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> linked',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was linked to a <OTRS_LINK_Object> .'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was linked to a <LIGERO_LINK_Object> .'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> összekapcsolva',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> összekapcsolva',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változást összekapcsolták egy <OTRS_LINK_Object> objektummal.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változást összekapcsolták egy <LIGERO_LINK_Object> objektummal.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> linked',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> linked',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is gekoppeld aan een <OTRS_LINK_Object> .'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is gekoppeld aan een <LIGERO_LINK_Object> .'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -2575,33 +2575,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> verknüpft',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> verknüpft',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde mit einem <OTRS_LINK_Object> verknüpft.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde mit einem <LIGERO_LINK_Object> verknüpft.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> linked',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> linked',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was linked to a <OTRS_LINK_Object> .'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was linked to a <LIGERO_LINK_Object> .'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> összekapcsolva',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> összekapcsolva',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változást összekapcsolták egy <OTRS_LINK_Object> objektummal.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változást összekapcsolták egy <LIGERO_LINK_Object> objektummal.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] <OTRS_LINK_Object> gekoppeld',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] <LIGERO_LINK_Object> gekoppeld',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is gekoppeld aan een <OTRS_LINK_Object> .'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is gekoppeld aan een <LIGERO_LINK_Object> .'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2622,33 +2622,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplante Startzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplante Startzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> hat die geplante Startzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> hat die geplante Startzeit erreicht.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Planned Start Time reached',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Planned Start Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has reached its Planned Start Time.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has reached its Planned Start Time.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] tervezett kezdési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] tervezett kezdési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változás elérte a tervezett kezdési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változás elérte a tervezett kezdési idejét.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplande starttijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplande starttijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> heeft de geplande starttijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> heeft de geplande starttijd bereikt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -2656,33 +2656,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplante Startzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplante Startzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> hat die geplante Startzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> hat die geplante Startzeit erreicht.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Planned Start Time reached',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Planned Start Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has reached its Planned Start Time.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has reached its Planned Start Time.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] tervezett kezdési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] tervezett kezdési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változás elérte a tervezett kezdési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változás elérte a tervezett kezdési idejét.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplande starttijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplande starttijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> heeft de geplande starttijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> heeft de geplande starttijd bereikt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2703,33 +2703,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplante Endzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplante Endzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> hat die geplante Endzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> hat die geplante Endzeit erreicht.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Planned End Time reached',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Planned End Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has reached its Planned End Time.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has reached its Planned End Time.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] tervezett befejezési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] tervezett befejezési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változás elérte a tervezett befejezési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változás elérte a tervezett befejezési idejét.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplande eindttijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplande eindttijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> heeft de geplande eindtijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> heeft de geplande eindtijd bereikt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -2737,33 +2737,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplante Endzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplante Endzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> hat die geplante Endzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> hat die geplante Endzeit erreicht.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Planned End Time reached',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Planned End Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has reached its Planned End Time.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has reached its Planned End Time.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] tervezett befejezési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] tervezett befejezési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változás elérte a tervezett befejezési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változás elérte a tervezett befejezési idejét.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] geplande eindtijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] geplande eindtijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> heeft de geplande eindtijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> heeft de geplande eindtijd bereikt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2783,54 +2783,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] begonnen',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde begonnen.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] begonnen',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde begonnen.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] started',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has started.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] started',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has started.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] elkezdődött',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] elkezdődött',
                         Body =>
-                            'Elkezdődött a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Elkezdődött a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] gestart',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is gestart.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] gestart',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is gestart.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] begonnen',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde begonnen.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] begonnen',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde begonnen.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] started',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has started.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] started',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has started.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] elkezdődött',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] elkezdődött',
                         Body =>
-                            'Elkezdődött a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Elkezdődött a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] gestart',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is gestart.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] gestart',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is gestart.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2850,54 +2850,54 @@ sub _AddNotifications {
             Message   => {
                 Agent => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] abgeschlossen',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde abgeschlossen.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] abgeschlossen',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde abgeschlossen.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] finished',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was finished.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] finished',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was finished.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] befejeződött',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] befejeződött',
                         Body =>
-                            'Befejeződött a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Befejeződött a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] afgerond',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is afgerond.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] afgerond',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is afgerond.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] abgeschlossen',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> wurde abgeschlossen.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] abgeschlossen',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> wurde abgeschlossen.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] finished',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> was finished.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] finished',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> was finished.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] befejeződött',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] befejeződött',
                         Body =>
-                            'Befejeződött a következő változás: <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>.'
+                            'Befejeződött a következő változás: <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] afgerond',
-                        Body    => '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> is afgerond.'
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] afgerond',
+                        Body    => '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> is afgerond.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2918,31 +2918,31 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Gewünschte Fertigstellungszeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Gewünschte Fertigstellungszeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> hat die gewünschte Fertigstellungszeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> hat die gewünschte Fertigstellungszeit erreicht.'
                             . $ChangeInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] requested time reached',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] requested time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has reached its requested time.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has reached its requested time.'
                             . $ChangeInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] kért idő elérve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] kért idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változás elérte a kért idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változás elérte a kért idejét.'
                             . $ChangeInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aangevraagd tijdstip bereikt',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aangevraagd tijdstip bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> heeft het aangevraagde tijdstip bereikt.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> heeft het aangevraagde tijdstip bereikt.'
                             . $ChangeInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -2950,31 +2950,31 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Gewünschte Fertigstellungszeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Gewünschte Fertigstellungszeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> hat die gewünschte Fertigstellungszeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> hat die gewünschte Fertigstellungszeit erreicht.'
                             . $ChangeInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] requested time reached',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] requested time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> has reached its requested time.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> has reached its requested time.'
                             . $ChangeInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
-                        Subject => '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] kért idő elérve',
+                        Subject => '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] kért idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> változás elérte a kért idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> változás elérte a kért idejét.'
                             . $ChangeInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] aangevraagd tijdstip bereikt',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] aangevraagd tijdstip bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> heeft het aangevraagde tijdstip bereikt.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> heeft het aangevraagde tijdstip bereikt.'
                             . $ChangeInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -2995,33 +2995,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplante Startzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplante Startzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> hat die geplante Startzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> hat die geplante Startzeit erreicht.'
                             . $WorkOrderInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] Planned Start Time reached',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] Planned Start Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> has reached the Planned Start Time.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> has reached the Planned Start Time.'
                             . $WorkOrderInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] tervezett kezdési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] tervezett kezdési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett kezdési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett kezdési idejét.'
                             . $WorkOrderInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplande starttijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplande starttijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> heeft de geplande starttijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> heeft de geplande starttijd bereikt.'
                             . $WorkOrderInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -3029,33 +3029,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplante Startzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplante Startzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> hat die geplante Startzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> hat die geplante Startzeit erreicht.'
                             . $WorkOrderInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] Planned Start Time reached',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] Planned Start Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> has reached the Planned Start Time.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> has reached the Planned Start Time.'
                             . $WorkOrderInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] tervezett kezdési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] tervezett kezdési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett kezdési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett kezdési idejét.'
                             . $WorkOrderInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplande starttijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplande starttijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> heeft de geplande starttijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> heeft de geplande starttijd bereikt.'
                             . $WorkOrderInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -3076,33 +3076,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplante Endzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplante Endzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> hat die geplante Endzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> hat die geplante Endzeit erreicht.'
                             . $WorkOrderInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] Planned End Time reached',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] Planned End Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> has reached the Planned End Time.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> has reached the Planned End Time.'
                             . $WorkOrderInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] tervezett befejezési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] tervezett befejezési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett befejezési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett befejezési idejét.'
                             . $WorkOrderInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplande eindttijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplande eindttijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> heeft de geplande eindtijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> heeft de geplande eindtijd bereikt.'
                             . $WorkOrderInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -3110,33 +3110,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplante Endzeit erreicht',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplante Endzeit erreicht',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> hat die geplante Endzeit erreicht.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> hat die geplante Endzeit erreicht.'
                             . $WorkOrderInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] Planned End Time reached',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] Planned End Time reached',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> has reached the Planned End Time.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> has reached the Planned End Time.'
                             . $WorkOrderInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] tervezett befejezési idő elérve',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] tervezett befejezési idő elérve',
                         Body =>
-                            'A(z) <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett befejezési idejét.'
+                            'A(z) <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> munkamegrendelés elérte a tervezett befejezési idejét.'
                             . $WorkOrderInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] geplande eindtijd bereikt',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] geplande eindtijd bereikt',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> heeft de geplande eindtijd bereikt.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> heeft de geplande eindtijd bereikt.'
                             . $WorkOrderInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -3157,33 +3157,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] begonnen',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] begonnen',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde begonnen.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde begonnen.'
                             . $WorkOrderInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] started',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] started',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> has started.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> has started.'
                             . $WorkOrderInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] elkezdődött',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] elkezdődött',
                         Body =>
-                            'Elkezdődött a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Elkezdődött a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] gestart',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] gestart',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is gestart.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is gestart.'
                             . $WorkOrderInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -3191,33 +3191,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] begonnen',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] begonnen',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde begonnen.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde begonnen.'
                             . $WorkOrderInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] started',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] started',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> has started.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> has started.'
                             . $WorkOrderInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] elkezdődött',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] elkezdődött',
                         Body =>
-                            'Elkezdődött a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Elkezdődött a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] gestart',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] gestart',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is gestart.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is gestart.'
                             . $WorkOrderInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -3238,33 +3238,33 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] abgeschlossen',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] abgeschlossen',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde abgeschlossen.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde abgeschlossen.'
                             . $WorkOrderInfoAgentDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] finished',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] finished',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was finished.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was finished.'
                             . $WorkOrderInfoAgentEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] befejeződött',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] befejeződött',
                         Body =>
-                            'Befejeződött a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Befejeződött a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoAgentHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] afgerond',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] afgerond',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is afgerond.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is afgerond.'
                             . $WorkOrderInfoAgentNl,
                         ContentType => 'text/plain',
                     },
@@ -3272,33 +3272,33 @@ sub _AddNotifications {
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] abgeschlossen',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] abgeschlossen',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> wurde abgeschlossen.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> wurde abgeschlossen.'
                             . $WorkOrderInfoCustomerDe,
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] finished',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] finished',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> was finished.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> was finished.'
                             . $WorkOrderInfoCustomerEn,
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] befejeződött',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] befejeződött',
                         Body =>
-                            'Befejeződött a következő munkamegrendelés: <OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>.'
+                            'Befejeződött a következő munkamegrendelés: <LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>.'
                             . $WorkOrderInfoCustomerHu,
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber>] afgerond',
+                            '[<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber>] afgerond',
                         Body =>
-                            '<OTRS_CONFIG_ITSMWorkOrder::Hook><OTRS_CHANGE_ChangeNumber>-<OTRS_WORKORDER_WorkOrderNumber> is afgerond.'
+                            '<LIGERO_CONFIG_ITSMWorkOrder::Hook><LIGERO_CHANGE_ChangeNumber>-<LIGERO_WORKORDER_WorkOrderNumber> is afgerond.'
                             . $WorkOrderInfoCustomerNl,
                         ContentType => 'text/plain',
                     },
@@ -3319,116 +3319,116 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Aktions-Ausführung <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Aktions-Ausführung <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Aktions-Ausführung <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Aktions-Ausführung <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Change Titel: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Aktueller Change Status: <OTRS_CHANGE_ChangeState>\n"
+                            . "Change Titel: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Aktueller Change Status: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Condition ID: <OTRS_CONDITION_ConditionID>\n"
-                            . "Condition Name: <OTRS_CONDITION_ConditionName>\n"
+                            . "Condition ID: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Condition Name: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Action ID: <OTRS_CONDITION_ActionID>\n"
-                            . "Aktions-Ausführung: <OTRS_CONDITION_ActionResult>\n"
+                            . "Action ID: <LIGERO_CONDITION_ActionID>\n"
+                            . "Aktions-Ausführung: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Action execution <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Action execution <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Action execution <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Action execution <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Change title: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Current change state: <OTRS_CHANGE_ChangeState>\n"
+                            . "Change title: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Current change state: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Condition ID: <OTRS_CONDITION_ConditionID>\n"
-                            . "Condition name: <OTRS_CONDITION_ConditionName>\n"
+                            . "Condition ID: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Condition name: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Action ID: <OTRS_CONDITION_ActionID>\n"
-                            . "Action execution: <OTRS_CONDITION_ActionResult>\n"
+                            . "Action ID: <LIGERO_CONDITION_ActionID>\n"
+                            . "Action execution: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] művelet-végrehajtás: <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> művelet-végrehajtás: <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Változáscím: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Jelenlegi változásállapot: <OTRS_CHANGE_ChangeState>\n"
+                            . "Változáscím: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Jelenlegi változásállapot: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Feltételazonosító: <OTRS_CONDITION_ConditionID>\n"
-                            . "Feltételnév: <OTRS_CONDITION_ConditionName>\n"
+                            . "Feltételazonosító: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Feltételnév: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Műveletazonosító: <OTRS_CONDITION_ActionID>\n"
-                            . "Művelet-végrehajtás: <OTRS_CONDITION_ActionResult>\n"
+                            . "Műveletazonosító: <LIGERO_CONDITION_ActionID>\n"
+                            . "Művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Actie uitgevoerd <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Actie uitgevoerd <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Actie uitgevoerd <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Actie uitgevoerd <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Change-titel: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Actuele change-status: <OTRS_CHANGE_ChangeState>\n"
+                            . "Change-titel: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Actuele change-status: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Conditie-ID: <OTRS_CONDITION_ConditionID>\n"
-                            . "Conditie naam: <OTRS_CONDITION_ConditionName>\n"
+                            . "Conditie-ID: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Conditie naam: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Actie-ID: <OTRS_CONDITION_ActionID>\n"
-                            . "Actie resultaat: <OTRS_CONDITION_ActionResult>\n"
+                            . "Actie-ID: <LIGERO_CONDITION_ActionID>\n"
+                            . "Actie resultaat: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Aktions-Ausführung <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Aktions-Ausführung <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Aktions-Ausführung <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Aktions-Ausführung <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Action execution <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Action execution <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Action execution <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Action execution <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] művelet-végrehajtás: <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> művelet-végrehajtás: <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Actie uitgevoerd <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Actie uitgevoerd <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Actie uitgevoerd <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Actie uitgevoerd <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                 },
@@ -3448,116 +3448,116 @@ sub _AddNotifications {
                 Agent => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Aktions-Ausführung <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Aktions-Ausführung <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Aktions-Ausführung <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Aktions-Ausführung <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Change Titel: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Aktueller Change Status: <OTRS_CHANGE_ChangeState>\n"
+                            . "Change Titel: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Aktueller Change Status: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Condition ID: <OTRS_CONDITION_ConditionID>\n"
-                            . "Condition Name: <OTRS_CONDITION_ConditionName>\n"
+                            . "Condition ID: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Condition Name: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Action ID: <OTRS_CONDITION_ActionID>\n"
-                            . "Aktions-Ausführung: <OTRS_CONDITION_ActionResult>\n"
+                            . "Action ID: <LIGERO_CONDITION_ActionID>\n"
+                            . "Aktions-Ausführung: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Action execution <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Action execution <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Action execution <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Action execution <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Change title: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Current change state: <OTRS_CHANGE_ChangeState>\n"
+                            . "Change title: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Current change state: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Condition ID: <OTRS_CONDITION_ConditionID>\n"
-                            . "Condition name: <OTRS_CONDITION_ConditionName>\n"
+                            . "Condition ID: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Condition name: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Action ID: <OTRS_CONDITION_ActionID>\n"
-                            . "Action execution: <OTRS_CONDITION_ActionResult>\n"
+                            . "Action ID: <LIGERO_CONDITION_ActionID>\n"
+                            . "Action execution: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] művelet-végrehajtás: <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> művelet-végrehajtás: <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Változáscím: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Jelenlegi változásállapot: <OTRS_CHANGE_ChangeState>\n"
+                            . "Változáscím: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Jelenlegi változásállapot: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Feltételazonosító: <OTRS_CONDITION_ConditionID>\n"
-                            . "Feltételnév: <OTRS_CONDITION_ConditionName>\n"
+                            . "Feltételazonosító: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Feltételnév: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Műveletazonosító: <OTRS_CONDITION_ActionID>\n"
-                            . "Művelet-végrehajtás: <OTRS_CONDITION_ActionResult>\n"
+                            . "Műveletazonosító: <LIGERO_CONDITION_ActionID>\n"
+                            . "Művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Actie uitgevoerd <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Actie uitgevoerd <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Actie uitgevoerd <OTRS_CONDITION_ActionResult>.'
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Actie uitgevoerd <LIGERO_CONDITION_ActionResult>.'
                             . "\n"
                             . "\n"
-                            . "Change-titel: <OTRS_CHANGE_ChangeTitle>\n"
-                            . "Actuele change-status: <OTRS_CHANGE_ChangeState>\n"
+                            . "Change-titel: <LIGERO_CHANGE_ChangeTitle>\n"
+                            . "Actuele change-status: <LIGERO_CHANGE_ChangeState>\n"
                             . "\n"
-                            . "Conditie-ID: <OTRS_CONDITION_ConditionID>\n"
-                            . "Conditie naam: <OTRS_CONDITION_ConditionName>\n"
+                            . "Conditie-ID: <LIGERO_CONDITION_ConditionID>\n"
+                            . "Conditie naam: <LIGERO_CONDITION_ConditionName>\n"
                             . "\n"
-                            . "Actie-ID: <OTRS_CONDITION_ActionID>\n"
-                            . "Actie resultaat: <OTRS_CONDITION_ActionResult>\n"
+                            . "Actie-ID: <LIGERO_CONDITION_ActionID>\n"
+                            . "Actie resultaat: <LIGERO_CONDITION_ActionResult>\n"
                             . "\n"
-                            . "<OTRS_CONFIG_HttpType>://<OTRS_CONFIG_FQDN>/<OTRS_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<OTRS_CHANGE_ChangeID>\n"
+                            . "<LIGERO_CONFIG_HttpType>://<LIGERO_CONFIG_FQDN>/<LIGERO_CONFIG_ScriptAlias>index.pl?Action=AgentITSMChangeZoom;ChangeID=<LIGERO_CHANGE_ChangeID>\n"
                             . "\n"
-                            . "-- <OTRS_CONFIG_NotificationSenderName>\n",
+                            . "-- <LIGERO_CONFIG_NotificationSenderName>\n",
                         ContentType => 'text/plain',
                     },
                 },
                 Customer => {
                     de => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Aktions-Ausführung <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Aktions-Ausführung <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Aktions-Ausführung <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Aktions-Ausführung <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                     en => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Action execution <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Action execution <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Action execution <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Action execution <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                     hu => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] művelet-végrehajtás: <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> művelet-végrehajtás: <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> művelet-végrehajtás: <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                     nl => {
                         Subject =>
-                            '[<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber>] Actie uitgevoerd <OTRS_CONDITION_ActionResult>',
+                            '[<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber>] Actie uitgevoerd <LIGERO_CONDITION_ActionResult>',
                         Body =>
-                            '<OTRS_CONFIG_ITSMChange::Hook><OTRS_CHANGE_ChangeNumber> Actie uitgevoerd <OTRS_CONDITION_ActionResult>.',
+                            '<LIGERO_CONFIG_ITSMChange::Hook><LIGERO_CHANGE_ChangeNumber> Actie uitgevoerd <LIGERO_CONDITION_ActionResult>.',
                         ContentType => 'text/plain',
                     },
                 },
@@ -3701,7 +3701,7 @@ sub _MigrateNotifications {
 
         # drop table 'notifications'
         my $XMLString = '<?xml version="1.0" encoding="utf-8" ?>
-            <database Name="otrs">
+            <database Name="ligero">
                 <TableDrop Name="notifications"/>
             </database>';
 
@@ -4048,7 +4048,7 @@ sub _MigrateConfigsFromLowerThan_5_0_12 {    ## no critic
 
 =head1 TERMS AND CONDITIONS
 
-This software is part of the OTRS project (L<https://otrs.org/>).
+This software is part of the LIGERO project (L<https://ligero.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you

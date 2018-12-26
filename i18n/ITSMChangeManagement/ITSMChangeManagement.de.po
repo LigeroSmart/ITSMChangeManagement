@@ -2,8 +2,8 @@
 # Translators:
 # Dominik <dominik@reichardt-online.it>, 2015
 # Ettore Atalan <atalanttore@googlemail.com>, 2014-2016
-# mathiasbraeunling <mathias.braeunling@otrs.com>, 2015
-# ru_otrs <robert.ullrich@otrs.com>, 2014
+# mathiasbraeunling <mathias.braeunling@ligero.com>, 2015
+# ru_ligero <robert.ullrich@ligero.com>, 2014
 # Rudy R <rudy.rohde@googlemail.com>, 2015
 # Sascha Lewandowski <S.Lewandowski@it-lew.de>, 2015
 # Stefan Simmerstatter, 2015
@@ -11,11 +11,11 @@
 # Udo Bretz, 2014,2016-2018
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-11-05 12:00+0000\n"
 "PO-Revision-Date: 2018-11-05 12:01+0000\n"
 "Last-Translator: Udo Bretz\n"
-"Language-Team: German (http://www.transifex.com/otrs/OTRS/language/de/)\n"
+"Language-Team: German (http://www.transifex.com/ligero/LIGERO/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

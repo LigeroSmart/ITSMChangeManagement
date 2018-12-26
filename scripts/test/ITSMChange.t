@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -15,7 +15,7 @@ use vars qw($Self);
 use Data::Dumper;
 use List::Util qw(max);
 
-## nofilter(TidyAll::Plugin::OTRS::Perl::TestSubs)
+## nofilter(TidyAll::Plugin::LIGERO::Perl::TestSubs)
 
 # ------------------------------------------------------------ #
 # make preparations
@@ -2895,7 +2895,7 @@ continue {
 
 # ------------------------------------------------------------ #
 # test for special ChangeSearch (with order by ChangeNumber)
-# bug# 5825 http://bugs.otrs.org/show_bug.cgi?id=5825
+# bug# 5825 http://bugs.ligero.org/show_bug.cgi?id=5825
 # ------------------------------------------------------------ #
 {
 

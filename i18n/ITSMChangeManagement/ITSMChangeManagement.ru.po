@@ -5,11 +5,11 @@
 # Yuri Kolesniov <ynkolesnikov@gmail.com>, 2014-2017
 msgid ""
 msgstr ""
-"Project-Id-Version: OTRS\n"
+"Project-Id-Version: LIGERO\n"
 "POT-Creation-Date: 2018-11-05 12:00+0000\n"
 "PO-Revision-Date: 2018-11-05 12:01+0000\n"
 "Last-Translator: Udo Bretz\n"
-"Language-Team: Russian (http://www.transifex.com/otrs/OTRS/language/ru/)\n"
+"Language-Team: Russian (http://www.transifex.com/ligero/LIGERO/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

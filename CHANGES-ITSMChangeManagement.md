@@ -2,4 +2,4 @@
  - 2017-10-10 Updated translations, thanks to all translators.
 
 #6.0.0.beta1 2017-10-04
- - 2017-10-04 Initial version for OTRS 6.
+ - 2017-10-04 Initial version for LIGERO 6.

@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -154,7 +154,7 @@ sub ChangeAdd {
 
         # Even when passed a plain ASCII string,
         # ToAscii() can return a non-utf8 string with chars in the extended range.
-        # Upgrade to utf-8 in order to comply to the OTRS-convention.
+        # Upgrade to utf-8 in order to comply to the LIGERO-convention.
         utf8::upgrade( $Param{"${Argument}Plain"} );
     }
 
@@ -393,7 +393,7 @@ sub ChangeUpdate {
 
         # Even when passed a plain ASCII string,
         # ToAscii() can return a non-utf8 string with chars in the extended range.
-        # Upgrade to utf-8 in order to comply to the OTRS-convention.
+        # Upgrade to utf-8 in order to comply to the LIGERO-convention.
         utf8::upgrade( $Param{"${Argument}Plain"} );
     }
 
@@ -2173,7 +2173,7 @@ sub ChangeSearch {
 
         # add the orderby columns also to the group by clause, as this is correct SQL
         # and some DBs like PostgreSQL are more strict than others
-        # this is the bugfix for bug# 5825 http://bugs.otrs.org/show_bug.cgi?id=5825
+        # this is the bugfix for bug# 5825 http://bugs.ligero.org/show_bug.cgi?id=5825
         if (@SQLOrderBy) {
 
             ORDERBY:
@@ -3528,7 +3528,7 @@ sub _CheckChangeParams {
 
 =head1 TERMS AND CONDITIONS
 
-This software is part of the OTRS project (L<https://otrs.org/>).
+This software is part of the LIGERO project (L<https://ligero.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you

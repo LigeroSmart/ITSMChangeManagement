@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -14,7 +14,7 @@ use warnings;
 # IMPORTANT!
 # Do not delete this line! This prevents the "Frontend/Basic" UnitTest from failing
 # on opensuse 11.3 and 11.4 (64bit) if mod_perl is used!
-## nofilter(TidyAll::Plugin::OTRS::Common::RemoveCVSIDs)
+## nofilter(TidyAll::Plugin::LIGERO::Common::RemoveCVSIDs)
 use vars qw($VERSION);
 
 our $ObjectManagerDisabled = 1;
@@ -450,7 +450,7 @@ sub AttributeDelete {
 
 =head1 TERMS AND CONDITIONS
 
-This software is part of the OTRS project (L<https://otrs.org/>).
+This software is part of the LIGERO project (L<https://ligero.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you

@@ -1,17 +1,17 @@
 /*
-Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you
 did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 */
 
-/*  All devices capable of OTRS minimum solution. Used to hide elements for mobile devices. */
+/*  All devices capable of LIGERO minimum solution. Used to hide elements for mobile devices. */
 @media only screen and (min-width: 1025px) {
 
 }
 
-/*  All devices with a smaller resolution than the current OTRS minimum solution */
+/*  All devices with a smaller resolution than the current LIGERO minimum solution */
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
     .WorkorderDetails {

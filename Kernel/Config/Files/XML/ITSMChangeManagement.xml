@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<otrs_config version="2.0" init="Config">
+<ligero_config version="2.0" init="Config">
     <Setting Name="Frontend::Module###AdminITSMChangeCIPAllocate" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the agent interface.</Description>
         <Navigation>Frontend::Admin::ModuleRegistration</Navigation>
@@ -5545,4 +5545,4 @@
             </Hash>
         </Value>
     </Setting>
-</otrs_config>
+</ligero_config>

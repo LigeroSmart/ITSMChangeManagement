@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2018 LIGERO AG, https://ligero.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -356,7 +356,7 @@ sub NotificationSend {
             );
         }
 
-        # replace otrs macros
+        # replace ligero macros
         $Notification->{Body} = $Self->_NotificationReplaceMacros(
             Type      => $Param{Type},
             Text      => $Notification->{Body},
@@ -487,7 +487,7 @@ sub NotificationSend {
             );
         }
 
-        # replace otrs macros
+        # replace ligero macros
         $Notification->{Body} = $Self->_NotificationReplaceMacros(
             Type      => $Param{Type},
             Text      => $Notification->{Body},
@@ -1391,18 +1391,18 @@ sub RecipientList {
 
 =head2 _NotificationReplaceMacros()
 
-This method replaces all the <OTRS_xxxx> macros in notification text.
+This method replaces all the <LIGERO_xxxx> macros in notification text.
 
     my $CleanText = $NotificationObject->_NotificationReplaceMacros(
         Type      => 'Change',    # Change|WorkOrder
-        Text      => 'Some <OTRS_CONFIG_FQDN> text',
+        Text      => 'Some <LIGERO_CONFIG_FQDN> text',
         RichText  => 1,           # optional, is Text richtext or not. default 0
         Recipient => {%User},
         Data      => {
             ChangeBuilder => {
                 UserFirstname => 'Tom',
                 UserLastname  => 'Tester',
-                UserEmail     => 'tt@otrs.com',
+                UserEmail     => 'tt@ligero.com',
             },
         },
         Change    => $Change,
@@ -1458,14 +1458,14 @@ sub _NotificationReplaceMacros {
     }
 
     # replace config options
-    my $Tag = $Start . 'OTRS_CONFIG_';
+    my $Tag = $Start . 'LIGERO_CONFIG_';
     $Text =~ s{ $Tag (.+?) $End }{$Kernel::OM->Get('Kernel::Config')->Get($1)}egx;
 
     # cleanup
     $Text =~ s{ $Tag .+? $End }{-}gi;
 
-    $Tag = $Start . 'OTRS_Agent_';
-    my $Tag2        = $Start . 'OTRS_CURRENT_';
+    $Tag = $Start . 'LIGERO_Agent_';
+    my $Tag2        = $Start . 'LIGERO_CURRENT_';
     my %CurrentUser = $Kernel::OM->Get('Kernel::System::User')->GetUserData( UserID => $Param{UserID} );
 
     # html quoting of content
@@ -1488,22 +1488,22 @@ sub _NotificationReplaceMacros {
     }
 
     # replace other needed stuff
-    $Text =~ s{ $Start OTRS_FIRST_NAME $End }{$CurrentUser{UserFirstname}}gxms;
-    $Text =~ s{ $Start OTRS_LAST_NAME $End }{$CurrentUser{UserLastname}}gxms;
+    $Text =~ s{ $Start LIGERO_FIRST_NAME $End }{$CurrentUser{UserFirstname}}gxms;
+    $Text =~ s{ $Start LIGERO_LAST_NAME $End }{$CurrentUser{UserLastname}}gxms;
 
     # cleanup
     $Text =~ s{ $Tag .+? $End}{-}xmsgi;
     $Text =~ s{ $Tag2 .+? $End}{-}xmsgi;
 
     # get and prepare realname
-    $Tag = $Start . 'OTRS_CUSTOMER_REALNAME';
+    $Tag = $Start . 'LIGERO_CUSTOMER_REALNAME';
     $Text =~ s{$Tag$End}{-}g;
 
-    # get customer data and replace it with <OTRS_CUSTOMER_DATA_...
-    $Tag  = $Start . 'OTRS_CUSTOMER_';
-    $Tag2 = $Start . 'OTRS_CUSTOMER_DATA_';
+    # get customer data and replace it with <LIGERO_CUSTOMER_DATA_...
+    $Tag  = $Start . 'LIGERO_CUSTOMER_';
+    $Tag2 = $Start . 'LIGERO_CUSTOMER_DATA_';
 
-    # cleanup all not needed <OTRS_CUSTOMER_DATA_ tags
+    # cleanup all not needed <LIGERO_CUSTOMER_DATA_ tags
     $Text =~ s{ $Tag .+? $End }{-}xmsgi;
     $Text =~ s{ $Tag2 .+? $End}{-}xmsgi;
 
@@ -1511,9 +1511,9 @@ sub _NotificationReplaceMacros {
     my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
     my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
 
-    # replace <OTRS_CHANGE_... tags
+    # replace <LIGERO_CHANGE_... tags
     {
-        my $Tag = $Start . 'OTRS_CHANGE_';
+        my $Tag = $Start . 'LIGERO_CHANGE_';
 
         # html quoting of content
         if ( $Param{RichText} ) {
@@ -1549,8 +1549,8 @@ sub _NotificationReplaceMacros {
 
         # Dropdown, Checkbox and MultipleSelect DynamicFields, can store values (keys) that are
         # different from the the values to display
-        # <OTRS_CHANGE_DynamicField_NameX> returns the stored key
-        # <OTRS_CHANGE_DynamicField_NameX_Value> returns the display value
+        # <LIGERO_CHANGE_DynamicField_NameX> returns the stored key
+        # <LIGERO_CHANGE_DynamicField_NameX_Value> returns the display value
 
         # get the dynamic fields for change object
         my $DynamicFieldList = $DynamicFieldObject->DynamicFieldListGet(
@@ -1605,9 +1605,9 @@ sub _NotificationReplaceMacros {
         $Text =~ s{ $Tag .+? $End}{-}gxmsi;
     }
 
-    # replace <OTRS_WORKORDER_... tags
+    # replace <LIGERO_WORKORDER_... tags
     {
-        my $Tag = $Start . 'OTRS_WORKORDER_';
+        my $Tag = $Start . 'LIGERO_WORKORDER_';
 
         # html quoting of content
         if ( $Param{RichText} ) {
@@ -1637,8 +1637,8 @@ sub _NotificationReplaceMacros {
 
         # Dropdown, Checkbox and MultipleSelect DynamicFields, can store values (keys) that are
         # different from the the values to display
-        # <OTRS_WORKORDER_DynamicField_NameX> returns the stored key
-        # <OTRS_WORKORDER_DynamicField_NameX_Value> returns the display value
+        # <LIGERO_WORKORDER_DynamicField_NameX> returns the stored key
+        # <LIGERO_WORKORDER_DynamicField_NameX_Value> returns the display value
 
         # get the dynamic fields for workorder object
         my $DynamicFieldList = $DynamicFieldObject->DynamicFieldListGet(
@@ -1693,9 +1693,9 @@ sub _NotificationReplaceMacros {
         $Text =~ s{ $Tag .+? $End}{-}gxmsi;
     }
 
-    # replace <OTRS_CONDITION... tags
+    # replace <LIGERO_CONDITION... tags
     {
-        my $Tag  = $Start . 'OTRS_CONDITION_';
+        my $Tag  = $Start . 'LIGERO_CONDITION_';
         my %Data = %{ $Param{Data} };
 
         # html quoting of content
@@ -1720,9 +1720,9 @@ sub _NotificationReplaceMacros {
         $Text =~ s{ $Tag .+? $End}{-}gxmsi;
     }
 
-    # replace <OTRS_LINK_... tags
+    # replace <LIGERO_LINK_... tags
     {
-        my $Tag      = $Start . 'OTRS_LINK_';
+        my $Tag      = $Start . 'LIGERO_LINK_';
         my %LinkData = %{ $Param{Link} };
 
         # html quoting of content
@@ -1747,11 +1747,11 @@ sub _NotificationReplaceMacros {
         $Text =~ s{ $Tag .+? $End}{-}gxmsi;
     }
 
-    # replace extended <OTRS_CHANGE_... tags
+    # replace extended <LIGERO_CHANGE_... tags
     my %InfoHash = %{ $Param{Data} };
 
     for my $Object (qw(ChangeBuilder ChangeManager WorkOrderAgent)) {
-        my $Tag = $Start . uc 'OTRS_' . $Object . '_';
+        my $Tag = $Start . uc 'LIGERO_' . $Object . '_';
 
         if ( exists $InfoHash{$Object} && ref $InfoHash{$Object} eq 'HASH' ) {
 
@@ -1779,8 +1779,8 @@ sub _NotificationReplaceMacros {
         $Text =~ s{ $Tag .+? $End}{-}gxmsi;
     }
 
-    # get recipient data and replace it with <OTRS_...
-    $Tag = $Start . 'OTRS_';
+    # get recipient data and replace it with <LIGERO_...
+    $Tag = $Start . 'LIGERO_';
     if ( $Param{Recipient} ) {
 
         # html quoting of content
@@ -1815,7 +1815,7 @@ sub _NotificationReplaceMacros {
 
 =head2 The following placeholders can be used in Change::xxx notifications
 
-=head3 C<OTRS_CHANGE_xxx>
+=head3 C<LIGERO_CHANGE_xxx>
 
 with the subsequent values for xxx:
 
@@ -1872,7 +1872,7 @@ with the subsequent values for xxx:
     ActualEndTime
         Actual end time of the change (calculated from the workorders).
 
-=head3 C<OTRS_CHANGEBUILDER_xxx>, C<OTRS_CHANGEMANAGER_xxx>, C<OTRS_WORKORDERAGENT_xxx>
+=head3 C<LIGERO_CHANGEBUILDER_xxx>, C<LIGERO_CHANGEMANAGER_xxx>, C<LIGERO_WORKORDERAGENT_xxx>
 
 with the subsequent values for xxx:
 
@@ -1883,7 +1883,7 @@ with the subsequent values for xxx:
     UserEmail
         Email address of the person.
 
-=head3 C<OTRS_WORKORDER_xxx>
+=head3 C<LIGERO_WORKORDER_xxx>
 
 with the subsequent values for xxx:
 
@@ -1927,7 +1927,7 @@ with the subsequent values for xxx:
     PlannedEffort
         This is the effort planned for the single workorder.
 
-=head3 C<OTRS_LINK_xxx>
+=head3 C<LIGERO_LINK_xxx>
 
 with the subsequent values for xxx:
 
@@ -1944,7 +1944,7 @@ with the subsequent values for xxx:
 
 =head1 TERMS AND CONDITIONS
 
-This software is part of the OTRS project (L<https://otrs.org/>).
+This software is part of the LIGERO project (L<https://ligero.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you
